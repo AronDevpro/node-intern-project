@@ -1,11 +1,10 @@
-import {config} from "dotenv";
+import dotenv from 'dotenv';
+dotenv.config();
 
-config();
-
-const configure = {
+const config = {
     port: process.env.PORT || 3000,
     dbURI: process.env.DB_URI,
     secretKey: process.env.SECRET_KEY
 };
 
-export default configure;
+export default config;

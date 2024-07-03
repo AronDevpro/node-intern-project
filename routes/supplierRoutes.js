@@ -4,6 +4,7 @@ import {
     getSuppliers, postSupplier,
     putSupplier
 } from "../controllers/supplierController.js";
+import {verifyToken} from "../middleware/authMiddleware.js";
 
 //creating a router
 const router = express.Router();
