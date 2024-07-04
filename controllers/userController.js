@@ -23,7 +23,7 @@ export const registerUser = async (req, res) => {
 export const loginUser = async (req, res) => {
     try {
         const token = await logUser(req.body);
-        res.status(201).json({Token:token});
+        res.status(201).json({token:token});
     } catch (error) {
         res.status(500).json({ message: error.message });
     }
